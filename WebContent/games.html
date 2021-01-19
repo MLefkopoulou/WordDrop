@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+  <title>Games</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+  html, body {
+	height: 100%;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+}
+
+.content {
+	flex: 1 0 auto;
+}
+
+.footer {
+	flex-shrink: 0;
+}
+    .box {
+      
+        width: 90%;
+        padding: 10px;  
+
+    }
+    .box2 {
+       
+        width: 90%;
+        height: 90%;
+        padding-left : 15px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        background-color: #dddddd;
+        border: 2px solid darkgrey;
+    }
+    .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+      }
+    .fa-plus{
+        font-size:60px;
+        background-color: blue;  
+        color :white;
+        padding : 10%;
+    }
+    p{
+    	margin-right: 10px;
+    }
+    
+  </style>
+  <body id="myPage">
+<div class="content">
+
+    <!-- Navbar -->
+	<div class="w3-top">
+		<div class="w3-bar w3-theme-d2 w3-left-align">
+			<a href="home.jsp"
+				class="w3-bar-item w3-button"style="padding:0px ;" ><img id="logo-img" src="logo1.png" style="height:38px;" onmouseover="hover(this);" onmouseout="unhover(this);" /></a>
+
+			<a class="w3-bar-item w3-button w3-hide-medium w3-hide-large  w3-theme-d2"
+				href="javascript:void(0);" onclick="openNav()"><i
+				class="fa fa-caret-down"></i></a>
+			<form action="GetAllLists" method="post">
+				<button class="w3-bar-item w3-button w3-hide-small  "
+					type="submit">My Lists</button>
+			</form>
+			<a href="#"
+				class="w3-bar-item w3-button w3-hide-small   w3-teal">Games</a>
+			<form action="GetCommunitycategories" method="post">
+				<button class="w3-bar-item w3-button w3-hide-small  "
+					type="submit">Community</button>
+			</form>
+			<div class="w3-dropdown-hover">
+				<button class="w3-button" title="Notifications"
+					style="position: absolute; top: 0px; right: 0px">
+					Profile <i class="fa fa-caret-down"></i>
+				</button>
+				<div class="w3-dropdown-content w3-card-4 w3-bar-block"
+					style="position: absolute; top: 39px; right: 0px">
+					<a href="FunctionsForSettings" class="w3-bar-item w3-button">Settings</a>
+					<form action="LogOutUser" method="post">
+						<button class="w3-bar-item w3-button" type="submit">Log
+							Out</button>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<!-- Navbar on small screens -->
+		<div id="navDemo"
+			class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+			<form action="GetAllLists" method="post">
+				<button class="w3-bar-item w3-button"
+					type="submit">My Lists</button>
+			</form>
+			<a href="#"
+				class="w3-bar-item w3-button w3-teal">Games</a>
+			<form action="GetCommunitycategories" method="post">
+				<button class="w3-bar-item w3-button"
+					type="submit">Community</button>
+			</form>
+
+		</div>
+	</div>
+
+  
+
+    <section class="w3-row-padding w3-center" style="padding-top:38px">
+      <h1 style="text-align:left; padding-left:15px">Games </h1> 
+      <div class = "box">
+        <div class = "box2">
+          <img src="gameicon2.webp" alt="Random Name" style="width:15%;float:left; overflow: hidden">
+          <div style = "padding-left:50px; text-align:left;overflow: hidden">
+            <h3 style = "color:teal"><b>Classic Review</b></h3>
+            <p>Review words from your lists. In this game a word is given and you must type the translation of that word  in the reference language. You can also play the reverse version of the game.</p>
+   			<p>In the end you can see the score that you have achieved playing classic review in a specific list.</p>        
+          </div>
+            <br>
+          	<div style="padding:0px 20px;margin-left: 100px;" >
+			  <video width="70%" controls>
+		  		<source src="https://mlefkopoulou.github.io/videos_worddrop/classic_review.mp4" type="video/mp4">
+			  </video>
+			</div>
+        </div>
+      </div>
+    </section>
+     <section class="w3-row-padding w3-center" style="padding-top:38px">
+      <div class = "box">
+        <div class = "box2">
+          <img src="gameicon2.webp" alt="Random Name" style="width:15%;float:left; overflow: hidden;">
+          <div style = "padding-left:50px; text-align:left; overflow: hidden;">
+            <h3 style = "color:teal"><b>Flashcards</b></h3>
+            <p>Review words in the style of flashcards. In this game you have to choose the correct word shown in the picture.</p>
+            <p>In the end you can see the score that you have achieved playing flashcards in a specific list.</p>
+          </div>
+          <br>
+          	<div style="padding:0px 20px;margin-left: 40px;" >
+			  <video width="70%" controls>
+		  		<source src="https://mlefkopoulou.github.io/videos_worddrop/flashcards.mp4" type="video/mp4">
+			  </video>
+			</div>
+        </div>
+      </div>
+    </section>
+
+	<section class="w3-row-padding w3-center" style="padding-top:38px">
+      <div class = "box">
+        <div class = "box2">
+          <img src="gameicon2.webp" alt="Random Name" style="width:15%;float:left; overflow: hidden">
+          <div style = "padding-left:50px; text-align:left;overflow: hidden">
+              <h3 style = "color:teal"><b>Multiple Choise</b></h3>
+            <p>Select the right translation to the reference word.</p>
+             <p>In the end you can see the score that you have achieved playing multiple choise in a specific list.</p>
+          </div>
+          <br>
+          <div style="padding:0px 20px;margin-left: 40px;" >
+			  <video width="70%" controls>
+		  		<source src="https://mlefkopoulou.github.io/videos_worddrop/multiple_choise.mp4" type="video/mp4">
+			  </video>
+		  </div>
+        </div>
+      </div>
+     </section>
+
+
+
+
+</div>
+
+<br><br><br>
+
+
+<!-- Footer -->
+	<footer class="footer w3-container w3-padding-32 w3-theme-d1 w3-center">
+		<h4 class="center">Contact</h4>
+		<div class="center">
+			<a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Facebook">
+				<i class="fa fa-facebook"></i>
+			</a>
+			<a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +">
+				<i class="fa fa-instagram"></i>
+			</a>
+			<a class="w3-button w3-large w3-teal w3-hide-small" href="javascript:void(0)" title="Linkedin">
+				<i class="fa fa-envelope"></i>
+			</a>
+		</div>
+
+		<div style="position: relative; bottom: 100px; z-index: 1;"
+			class="w3-tooltip w3-right">
+			<span class="w3-text w3-padding w3-teal w3-hide-small">Go To
+				Top</span> <a class="w3-button w3-theme" href="#myPage"><span
+				class="w3-xlarge"> <i class="fa fa-chevron-circle-up"></i></span></a>
+		</div>
+	</footer>
+	<!-- EndOf Footer -->
+
+    <script>
+
+      // Used to toggle the menu on smaller screens when clicking on the menu button
+      function openNav() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+        } else { 
+          x.className = x.className.replace(" w3-show", "");
+        }
+      }
+      
+      
+     //hover logo
+ 	function hover(element) {
+ 	  element.setAttribute('src', 'logo2.png');
+ 	}
+ 	
+ 	function unhover(element) {
+ 	  element.setAttribute('src', 'logo1.png');
+ 	}
+ 	
+	//
+	window.onload = function() {
+		var back_times = localStorage.getItem('back_times');
+
+	    if(back_times) {
+	    	localStorage.removeItem("back_times");
+	    }
+	};
+    </script>
+  </body>
+</html>

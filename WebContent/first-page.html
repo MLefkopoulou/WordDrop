@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<title>First Page</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+html, body {
+	height: 100%;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+}
+
+.content {
+	flex: 1 0 auto;
+}
+
+.footer {
+	flex-shrink: 0;
+}
+  .fa-language {font-size:200px}
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+</style>
+<body id="myPage">
+<div class="content">
+
+<!-- Navbar -->
+<div class="w3-top">
+ <div class="w3-bar w3-theme-d2 w3-left-align">
+ <a href="first-page.html" class="w3-bar-item w3-button w3-teal" style="padding:0px ;"><img id="logo-img" src="logo3.png" style="height:38px;" onmouseover="hover(this);" onmouseout="unhover(this);" /></a> 
+  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large  w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-caret-down"></i></a>
+  
+  <a href="signup.jsp" class="w3-bar-item w3-button w3-hide-small ">Sign Up</a>
+  <a href="login.jsp" class="w3-bar-item w3-button w3-hide-small ">Log In</a>
+  
+  
+ </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+    <a href="signup.jsp" class="w3-bar-item w3-button">Sign Up</a>
+    <a href="login.jsp" class="w3-bar-item w3-button">Log In</a>
+    
+
+  </div>
+</div>
+
+<!-- Image Header -->
+<div class="w3-display-container w3-animate-opacity">
+  <img src="lang8.jpg" alt="image not found" style="width:100%;min-height:350px;max-height:450px;padding-top:38px">
+  
+</div>
+
+<!-- Contact Container -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-threequarter">
+      <h1 class = "w3-text-teal"><b>Sign up now and learn faster!</b></h1>
+      <h4 class="w3-padding-32">
+        <b>WordDrop has been created to make learning vocabulary more efficient and fun.</b>
+        <h5>
+        <p>Some functions of the application are the following: </p>
+          <ul>
+            <li>Create custom lists of new words</li>
+            <li>Connect words with images to help you memorize easier</li>
+            <li>Connect words with their translation</li>
+            <li>Explore lists from other members</li>
+            <li>Play games to test and challenge yourself against both new and old gained vocabulary</li>
+          </ul>
+        </h5>
+      </h4>
+
+    </div>
+
+    <div class="w3-quarter w3-center" style="padding-top:130px">
+    
+      <i class="fa fa-language w3-padding-64 w3-text-teal center"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+</div>
+
+
+
+
+<!-- Footer -->
+	<footer class="footer w3-container w3-padding-32 w3-theme-d1 w3-center">
+		<h4 class="center">Contact</h4>
+		<div class="center">
+			<a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Facebook">
+				<i class="fa fa-facebook"></i>
+			</a>
+			<a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +">
+				<i class="fa fa-instagram"></i>
+			</a>
+			<a class="w3-button w3-large w3-teal w3-hide-small" href="javascript:void(0)" title="Linkedin">
+				<i class="fa fa-envelope"></i>
+			</a>
+		</div>
+
+		<div style="position: relative; bottom: 100px; z-index: 1;"
+			class="w3-tooltip w3-right">
+			<span class="w3-text w3-padding w3-teal w3-hide-small">Go To
+				Top</span> <a class="w3-button w3-theme" href="#myPage"><span
+				class="w3-xlarge"> <i class="fa fa-chevron-circle-up"></i></span></a>
+		</div>
+	</footer>
+	<!-- EndOf Footer -->
+
+<script>
+// Script for side navigation
+function w3_open() {
+  var x = document.getElementById("mySidebar");
+  x.style.width = "300px";
+  x.style.paddingTop = "10%";
+  x.style.display = "block";
+}
+
+// Close side navigation
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+
+//hover logo
+function hover(element) {
+  element.setAttribute('src', 'logo4.png');
+}
+
+function unhover(element) {
+  element.setAttribute('src', 'logo3.png');
+}
+</script>
+
+</body>
+</html>
