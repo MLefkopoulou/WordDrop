@@ -95,7 +95,7 @@ else{
        <div id = "error_username" style="color:#800020; display:none;"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
       <label>Error username</label></div>
       <div class="w3-section">  
-      <div class="w3-section">      
+       
         <label><b>Email</b></label>
         <input class="w3-input" type="email" name="email" autocomplete="off" required>
       </div>
